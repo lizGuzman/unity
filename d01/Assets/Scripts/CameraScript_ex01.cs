@@ -59,11 +59,6 @@ public class CameraScript_ex01 : MonoBehaviour {
 				done++;
 		}
 		if (done == 3)
-		{
-			if(Application.loadedLevel != 2)
-				Application.LoadLevel(2);
-			else
-				print("YeeeeeY");
-		}
+			Application.LoadLevel(Application.loadedLevel + 1);
 	}
 }
